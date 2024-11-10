@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.view-all-button {
+  color: #7c8083;
+  background-color: inherit;
+  padding: 12px 20px;
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 15px;
+}
+
+th {
+  font-weight: 500;
+  color: #b3b0b0;
+}
+
+.course-content {
+  display: flex;
+  align-items: center;
+}
+
+.course-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 15px;
+  font-size: 28px;
+  color: #fff;
+  &.layers {
+    background-color: rgba(
+      51,
+      129,
+      255,
+      0.2
+    ); /* Slightly transparent version of #3381ff */
+    color: #d987fc;
+  }
+  &.code {
+    background-color: rgba(
+      0,
+      123,
+      255,
+      0.2
+    ); /* Slightly transparent version of #007bff */
+    color: #007bff;
+  }
+  &.grid_on {
+    background-color: rgba(
+      184,
+      82,
+      82,
+      0.2
+    ); /* Slightly transparent version of #b85252 */
+    color: #b85252;
+  }
+  &.computer {
+    background-color: rgba(
+      41,
+      227,
+      93,
+      0.2
+    ); /* Slightly transparent version of #29e35d */
+    color: #29e35d;
+  }
+  &.view_week {
+    background-color: rgba(
+      224,
+      35,
+      35,
+      0.2
+    ); /* Slightly transparent version of #e02323 */
+    color: #e02323;
+  }
+}
+
+.course-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.course-info span {
+  font-size: 16px;
+  color: #888;
+}
+
+.coursename {
+  color: #000 !important;
+}
+
+.course-lessons {
+  color: #888;
+}
+
+/* Media Queries */
+
+@media (max-width: 1440px) {
+  .container {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .view-all-button {
+    padding: 14px 22px;
+    font-size: 18px;
+  }
+
+  table {
+    font-size: 16px;
+  }
+
+  th,
+  td {
+    padding: 16px;
+  }
+
+  .course-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 30px;
+  }
+
+  .course-info span {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .view-all-button {
+    padding: 12px 20px;
+    font-size: 17px;
+  }
+
+  table {
+    font-size: 15px;
+  }
+
+  th,
+  td {
+    padding: 14px;
+  }
+
+  .course-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+  }
+
+  .course-info span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .view-all-button {
+    padding: 10px 18px;
+    font-size: 16px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 12px;
+  }
+
+  .course-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 26px;
+  }
+
+  .course-info span {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .view-all-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 12px;
+  }
+
+  .course-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 26px;
+  }
+
+  .course-info span {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .view-all-button {
+    padding: 9px 18px;
+    font-size: 15px;
+  }
+
+  table {
+    font-size: 13px;
+  }
+
+  th,
+  td {
+    padding: 10px;
+  }
+
+  .course-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
+
+  .course-info span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .view-all-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+
+  .course-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+  }
+
+  .course-info span {
+    font-size: 13px;
+  }
+}

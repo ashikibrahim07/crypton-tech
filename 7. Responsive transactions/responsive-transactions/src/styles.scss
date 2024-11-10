@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.transactions {
+  width: 550px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 70px;
+  padding: 40px;
+  border: 1px solid #ccc;
+  background-color: hwb(120 93% 5% / 0.925);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+
+  .transactions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  p {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    margin-top: 0;
+    text-align: left;
+    flex-grow: 1;
+  }
+
+  .see-all {
+    color: #979997;
+    background-color: inherit;
+    border: none;
+    font-size: 24px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .transactions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 25px;
+    overflow-y: auto;
+    height: 500px;
+    margin-bottom: 25px;
+  }
+
+  .transaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    border-radius: 20px;
+    background-color: white;
+    height: 100px;
+
+    .transaction-info {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      h3 {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+
+      p {
+        margin: 0;
+        font-size: 1.2rem;
+        color: #666;
+      }
+    }
+
+    .transaction-amount {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      span {
+        font-size: 1.8rem;
+        font-weight: 500;
+      }
+
+      p {
+        margin: 0;
+        margin-top: 6px;
+        font-size: 1.3rem;
+        color: #000;
+      }
+    }
+  }
+
+  .green {
+    color: #3bdb41;
+  }
+
+  .red {
+    color: red;
+  }
+}
