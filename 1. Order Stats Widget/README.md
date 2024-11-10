@@ -10,7 +10,7 @@ Follow these steps to set up and run the application on your local machine.
 
 ```bash
 git clone https://github.com/ashikibrahim07/crypton-tech-assesment-by-ashik-ibrahim.git
-cd crypton-tech-assesment-by-ashik-ibrahim/OrderStatsApp
+cd crypton-tech-assesment-by-ashik-ibrahim/1. Order Stats Widget
 ```
 
 ### 2. Install dependencies
